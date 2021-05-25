@@ -1,10 +1,10 @@
 package com.challenge.assessment.producto.entity;
 
-
 import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Date;
+
 
 @Entity
 @Data
@@ -26,5 +26,4 @@ public class Producto {
 
     @Column(name= "fecha_grabacion")
     private Date fecha_grabacion = new Date();
-
 }
