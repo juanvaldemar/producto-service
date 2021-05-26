@@ -24,6 +24,9 @@ public class Producto {
     @Column(name= "tecnologia")
     private String tecnologia;
 
+    @Column(name= "numero")
+    private String numero;
+
     @Column(name= "fecha_grabacion")
     private Date fecha_grabacion = new Date();
 }

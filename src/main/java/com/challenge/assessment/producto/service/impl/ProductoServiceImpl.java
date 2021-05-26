@@ -26,6 +26,12 @@ public class ProductoServiceImpl implements ProductoService {
     }
 
     @Override
+    public List<Producto> findAllByNumero(String id) {
+        return productoServiceRepositoy.findAllByNumero(id);
+    }
+
+
+    @Override
     public void findDeleteAll() {
         productoServiceRepositoy.deleteAll();
     }
