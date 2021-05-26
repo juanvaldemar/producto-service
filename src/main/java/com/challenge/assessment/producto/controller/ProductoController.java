@@ -41,6 +41,19 @@ public class ProductoController {
 
     }
 
+    @RequestMapping(value = "/producto/{id}", method = RequestMethod.GET)
+    public ResponseEntity<List<Producto>> findAllByNumeroDocumento(@PathVariable("id") String id){
+
+
+
+        List<Producto> productoList = new ArrayList<>();
+
+        productoList = productoService.findAllByNumero(id);
+
+        return new ResponseEntity<>(productoList, HttpStatus.OK);
+
+    }
+
 
 
 

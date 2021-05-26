@@ -10,6 +10,7 @@ public interface ProductoService {
 
     Producto save(Producto cliente);
     List<Producto> findAll();
+    List<Producto> findAllByNumero(String id);
     void findDeleteAll();
 
 }
